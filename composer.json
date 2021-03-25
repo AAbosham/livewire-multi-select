@@ -1,0 +1,55 @@
+{
+    "name": "aabosham/livewire-multi-select",
+    "description": "Livewire dropdown select component",
+    "keywords": [
+        "aabosham",
+        "livewire-multi-select"
+    ],
+    "homepage": "https://github.com/aabosham/livewire-multi-select",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Andrés Santibáñez",
+            "email": "santibanez.andres@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "livewire/livewire": "^2.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aabosham\\LivewireSelect\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aabosham\\LivewireSelect\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aabosham\\LivewireSelect\\LivewireSelectServiceProvider"
+            ],
+            "aliases": {
+                "LivewireSelect": "Aabosham\\LivewireSelect\\LivewireSelectFacade"
+            }
+        }
+    }
+}
