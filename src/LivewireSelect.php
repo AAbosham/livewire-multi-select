@@ -1,13 +1,13 @@
 <?php
 
-namespace Aabosham\LivewireSelect;
+namespace Aabosham\LivewireMultiSelect;
 
 use Illuminate\Support\Collection;
 use Livewire\Component;
 
 /**
- * Class LivewireSelect
- * @package Aabosham\LivewireSelect
+ * Class LivewireMultiSelect
+ * @package Aabosham\LivewireMultiSelect
  * @property string $name
  * @property string $placeholder
  * @property mixed $value
@@ -26,7 +26,7 @@ use Livewire\Component;
  * @property string $searchSelectedOptionView
  * @property string $searchNoResultsView
  */
-class LivewireSelect extends Component
+class LivewireMultiSelect extends Component
 {
     public $name;
     public $placeholder;

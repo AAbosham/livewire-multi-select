@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Aabosham\\LivewireSelect\\": "src"
+            "Aabosham\\LivewireMultiSelect\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Aabosham\\LivewireSelect\\Tests\\": "tests"
+            "Aabosham\\LivewireMultiSelect\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Aabosham\\LivewireSelect\\LivewireSelectServiceProvider"
+                "Aabosham\\LivewireMultiSelect\\LivewireMultiSelectServiceProvider"
             ],
             "aliases": {
-                "LivewireSelect": "Aabosham\\LivewireSelect\\LivewireSelectFacade"
+                "LivewireMultiSelect": "Aabosham\\LivewireMultiSelect\\LivewireMultiSelectFacade"
             }
         }
     }

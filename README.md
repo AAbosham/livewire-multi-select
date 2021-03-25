@@ -25,7 +25,7 @@ Please make sure you include both of these dependencies before using this compon
 ### Usage
 
 In order to use this component, you must create a new Livewire component that extends from 
-`LivewireSelect`
+`LivewireMultiSelect`
 
 You can use `make:livewire` to create a new component. For example.
 ``` bash
@@ -33,11 +33,11 @@ php artisan make:livewire CarModelSelect
 ```
 
 In the `CarModelSelect` class, instead of extending from the base Livewire `Component` class, 
-extend from `LivewireSelect` class. Also, remove the `render` method. 
+extend from `LivewireMultiSelect` class. Also, remove the `render` method. 
 You'll have a class similar to this snippet.
  
 ``` php
-class CarModelSelect extends LivewireSelect
+class CarModelSelect extends LivewireMultiSelect
 {
     //
 }

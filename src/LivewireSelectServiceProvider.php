@@ -1,11 +1,11 @@
 <?php
 
-namespace Aabosham\LivewireSelect;
+namespace Aabosham\LivewireMultiSelect;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
-class LivewireSelectServiceProvider extends ServiceProvider
+class LivewireMultiSelectServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -20,7 +20,7 @@ class LivewireSelectServiceProvider extends ServiceProvider
             ], 'livewire-select-views');
         }
 
-        Blade::directive('LivewireSelectScripts', function () {
+        Blade::directive('LivewireMultiSelectScripts', function () {
             return <<<'HTML'
                 <script>
                         window.livewire.on('livewire-select-focus-search', (data) => {
