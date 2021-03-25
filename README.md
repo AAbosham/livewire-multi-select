@@ -1,5 +1,6 @@
 # Livewire Select
 
+fork from https://github.com/asantibanez/livewire-select 
 Livewire component for dependant and/or searchable select inputs
 
 ### Preview
@@ -25,7 +26,7 @@ Please make sure you include both of these dependencies before using this compon
 ### Usage
 
 In order to use this component, you must create a new Livewire component that extends from 
-`LivewireMultiSelect`
+`LivewireSelect`
 
 You can use `make:livewire` to create a new component. For example.
 ``` bash
@@ -33,11 +34,11 @@ php artisan make:livewire CarModelSelect
 ```
 
 In the `CarModelSelect` class, instead of extending from the base Livewire `Component` class, 
-extend from `LivewireMultiSelect` class. Also, remove the `render` method. 
+extend from `LivewireSelect` class. Also, remove the `render` method. 
 You'll have a class similar to this snippet.
  
 ``` php
-class CarModelSelect extends LivewireMultiSelect
+class CarModelSelect extends LivewireSelect
 {
     //
 }

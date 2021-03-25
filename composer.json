@@ -10,8 +10,8 @@
     "type": "library",
     "authors": [
         {
-            "name": "Andrés Santibáñez",
-            "email": "santibanez.andres@gmail.com",
+            "name": "Abobaker",
+            "email": "albaakr@gmail.com",
             "role": "Developer"
         }
     ],
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Aabosham\\LivewireMultiSelect\\": "src"
+            "Aabosham\\LivewireSelect\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Aabosham\\LivewireMultiSelect\\Tests\\": "tests"
+            "Aabosham\\LivewireSelect\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Aabosham\\LivewireMultiSelect\\LivewireMultiSelectServiceProvider"
+                "Aabosham\\LivewireSelect\\LivewireSelectServiceProvider"
             ],
             "aliases": {
-                "LivewireMultiSelect": "Aabosham\\LivewireMultiSelect\\LivewireMultiSelectFacade"
+                "LivewireSelect": "Aabosham\\LivewireSelect\\LivewireSelectFacade"
             }
         }
     }
